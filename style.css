@@ -1,36 +1,113 @@
 html, body {
-    margin: 0;
+	margin: 0;
     padding: 0;
-    background-color: black;
-    background-image: url("forest.jpg");
-
+	background-color: white;
 }
-
 .main-header {
     background-image: url("forest.jpg");
     background-size: cover;
     background-blend-mode: multiply;
     background-color: rgba(0,0,0,0.5);
-    padding-bottom: 30px;
+	padding-bottom: 40px;
+	height:100px;
+	padding-top: 40px;
+}
+ul li {
+	display: inline;
 }
 
-#horizontal_list {
-    display: inline;
+#video-id {
+	visibility: hidden;
+		
+}
+#video-id2 {
+	visibility: hidden;
+		
+}
+#video-id3 {
+	visibility: hidden;
+		
+}
+
+h1 {
+	display: inline;
+	border-width: 3px;
+    border-style:solid;
+	text-align:center;
 }
 .center {
-    text-align: center;
-    
-  }
+	align-items: center;
+}
+
+.video-button{
+background-color:rgb(255, 255, 255);
+border-radius: 25px;
+align-items: center;
+width:100px;
+height:50px;
+padding:0px;
+margin-right: 2.5%;
+
+margin-top: 270px;
+
+
+
+
+
+}
+.video-button2{
+	background-color:rgb(255, 255, 255);
+	border-radius: 25px;
+	align-items: center;
+	width:100px;
+	height:50px;
+	padding:0px;
+	margin-right: 2.5%;
+	
+	margin-top: 270px;
+	
+	
+}
+.video-button3{
+		background-color:rgb(255, 255, 255);
+		border-radius: 25px;
+		align-items: center;
+		width:100px;
+		height:50px;
+		padding:0px;
+		margin-right: 2.5%;
+		
+		margin-top: 270px;
+		
+		
+		}
+
+#logo{
+	color:  #ffffff;
+	font: normal 36px 'Open Sans', cursive;
+	
+
+}
+
+button{
+	height: 35px;
+	width: 35px;
+}
+
+
+
 li a {
-  display: block;
   color: white;
-  text-align: center;
+  padding-top: 30px;
   padding: 16px;
+  padding-left:30px;
   text-decoration: none;
+  
+
 }
 
 li a:hover {
-  background-color: #11111169;
+  background-color: #11111198;
 }
 
 
@@ -50,8 +127,9 @@ li a:hover {
 .flexbox-item {
     width: 200px;
     margin: 10px;
-    border: 5px solid rgba(54, 9, 158, 0.836);
-    background-color: #000000b9;
+    border: 5px solid rgba(24, 180, 107, 0.836);
+    background-color: #000000;
+    display: flex;
 
 }
 
@@ -59,14 +137,37 @@ li a:hover {
     min-height: 100px;
     flex-grow: 0.5;
     flex-basis:0;
+    object-fit: scale-down;
+	align-items: stretch;
+	border-radius: 20px;
+	border-width: 10px;
+	border-style:  double ;
+
+
+}
+
+.flexbox-item-1 img {
+	box-sizing: border-box;
+	
+	margin: 50px;
+	margin-top:100px;
+	margin-left: 38px;
+	width: 75%;
+	height: 45%;
+
+
 }
 
 .flexbox-item-2 {
-    background-image:  href="Semender.jpg";
+    
     min-height: 200px;
     flex-shrink: 0;
     flex-grow: 1;
-    flex-basis: 0;
+	flex-basis: 0;
+	border-radius: 20px;
+	border-width: 10px;
+	border-style:  double ;
+    
     padding: 20px;
     padding-left: 60px;
     padding-right: 15px;
@@ -75,8 +176,12 @@ li a:hover {
 .flexbox-item-3 {
     min-height: 300px;
     flex-grow: 0.5;
-    flex-basis: 0;
-    color: white
+	flex-basis: 0;
+	border-radius: 20px;
+	border-width: 10px;
+	padding:5px;
+	color: white;
+	border-style: double ;
 }
 
 
@@ -90,13 +195,6 @@ li a:hover {
 }
        
        
-h1 {
-    
-    border-width: 5px;
-    border-style:solid;
-    background-color: rgba(149, 23, 153, 0.651);
-}
-
 
   
 
@@ -116,13 +214,14 @@ section {
 }
 
 .footer-distributed{
-	background: rgb(182, 23, 23);
+	background: rgb(0, 0, 0);
 	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
 	box-sizing: border-box;
 	width: 100%;
 	text-align: left;
 	font: bold 16px sans-serif;
 	padding: 55px 50px;
+	border-radius: 50px;
 }
 
 .footer-distributed .footer-left,
@@ -147,7 +246,7 @@ section {
 }
 
 .footer-distributed h3 span{
-	color:  rgb(2, 90, 28);
+	color:  rgb(21, 153, 60);
 }
 
 
@@ -167,7 +266,7 @@ section {
 }
 
 .footer-distributed .footer-company-name{
-	color:  #222;
+	color:  rgb(219, 211, 211);
 	font-size: 14px;
 	font-weight: normal;
 	margin: 0;
@@ -180,7 +279,7 @@ section {
 }
 
 .footer-distributed .footer-center i{
-	background-color:  #33383b;
+	
 	color: #ffffff;
 	font-size: 25px;
 	width: 38px;
@@ -213,18 +312,11 @@ section {
 }
 
 .footer-distributed .footer-center p a{
-	color:  lightseagreen;
+	color:  rgb(21, 153, 60);
 	text-decoration: none;;
 }
 
-.imagema {
-    max-width: 100%;
-    display: flex;
-
     
-
-}
-
 
 .footer-distributed .footer-links a:before {
   content: "|";
@@ -244,6 +336,7 @@ section {
 
 .footer-distributed .footer-right{
 	width: 20%;
+	
 }
 
 .footer-distributed .footer-company-about{
@@ -271,7 +364,7 @@ section {
 	width: 35px;
 	height: 35px;
 	cursor: pointer;
-	background-color:  #33383b;
+	
 	border-radius: 2px;
 
 	font-size: 20px;
@@ -282,6 +375,24 @@ section {
 	margin-right: 3px;
 	margin-bottom: 5px;
 }
+
+
+.icon-back-color1 {
+	background-color: red;
+	
+}
+.icon-back-color2 {
+	background-color: blue;
+}
+
+.icon-back-color3 {
+	background-color: yellow;
+}
+.icon-back-color4 {
+	
+	background-color:white;
+}
+
 
 
 
@@ -305,3 +416,59 @@ section {
 	}
 
 }
+
+/* Popup container */
+.popup {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+	color: white;
+	padding: 16px;
+	padding-top: 0px;
+  }
+  
+  /* The actual popup (appears on top) */
+  .popup .popuptext {
+	visibility: hidden;
+	width: 250px;
+	background-color: rgba(85, 85, 85, 0.534);
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 8px 0;
+	position: absolute;
+	z-index: 1;
+	bottom: 125%;
+	left: 50%;
+	margin-left: -80px;
+  }
+  
+  /* Popup arrow */
+  .popup .popuptext::after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: #555 transparent transparent transparent;
+  }
+  
+  /* Toggle this class when clicking on the popup container (hide and show the popup) */
+  .popup .show {
+	visibility: visible;
+	-webkit-animation: fadeIn 1s;
+	animation: fadeIn 1s
+  }
+  
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+	from {opacity: 0;}
+	to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+	from {opacity: 0;}
+	to {opacity:1 ;}
+  }

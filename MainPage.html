@@ -2,140 +2,304 @@
 
 <html>
 
-	<head>
-        <meta charset= "UTF-8">
-        <meta name="Description" content= "This is an awesome website">
-        <link rel="stylesheet" href="style.css" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="Description" content="This is an awesome website">
+    <link rel="stylesheet" href="style.css" />
+    <title> NTV </title>
 
-        <title> NTV </title>
-        
 
-    </head>
-    
+</head>
+
 
 <body>
-    <header class= "main-header">
-        <nav>
-            <ul id="horizontal_list">
+    <header class="main-header">
+        <div>
+            <ul class="horizontal_list">
+                <li id="logo"> NTVSemender </li>
                 <li><a href="index.html"> HOME </a></li>
                 <li><a href="store.html"> STORE </a></li>
                 <li><a href="about.html"> ABOUT </a></li>
-                
+                <li class="popup" onclick="myFunction()"> CONTACT <span class="popuptext" id="myPopup">Efecan
+                        Bahçıvanoğlu
+                        +90(554)4982797
+                        efecanbahcivanoglu@gmail.com </span>
+                </li>
             </ul>
-        </nav>
+        </div>
         <hr>
 
 
-        </header>
+    </header>
+
+    <script>
+        // When the user clicks on div, open the popup
+        function myFunction() {
+            var popup = document.getElementById("myPopup");
+            popup.classList.toggle("show");
+        }
+    </script>
+
+    <script>
+        function showVideo() {
+            var x = document.getElementById("video-id")
+            x.style.visibility = "visible";
+
+            var y = document.getElementById("video-button-id")
+            y.style.visibility = "hidden";
+        }
+    </script>
 
 
 
 
-        <h1 class="center">Why semenders are the best animals in the world?</h1>
-        <hr/>
-    <br/>
-        
-       
-       
 
-        <div class="flexbox-container">
-            <div class= "flexbox-item flexbox-item-1 imagema">
-                <img src="Semender.jpg"/>
+    <h1 class="center">Why semenders are the best animals in the world?</h1>
+
+
+
+
+
+    <div class="flexbox-container">
+        <div class="flexbox-item flexbox-item-1 ">
+            <img src="Semender.jpg" />
         </div>
-            <div class= "flexbox-item flexbox-item-2" >
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/SEejivHRIbE" frameborder="0" 
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+        <div class="flexbox-item flexbox-item-2">
+
+            <iframe id="video-id" width="560" height="315" src="https://www.youtube.com/embed/SEejivHRIbE"
+                frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
-        
-        
-            </div>
-            <div class= "flexbox-item
-            flexbox-item-3">Salamanders are a group of amphibians typically characterized by a lizard-like appearance, 
-            with slender bodies, blunt snouts, short limbs projecting at right angles to the body, 
-            and the presence of a tail in both larvae and adults. 
-            All present-day salamander families are grouped together under the order Urodela. 
-            Salamander diversity is highest in the Northern Hemisphere and most species are found in the Holarctic realm, 
+
+            <button id="video-button-id" class="video-button" type="button" onclick=showVideo()>Semender izle</button>
+
+
+
+
+
+        </div>
+        <div class="flexbox-item
+            flexbox-item-3">Salamanders are a group of amphibians typically characterized by a lizard-like appearance,
+            with slender bodies, blunt snouts, short limbs projecting at right angles to the body,
+            and the presence of a tail in both larvae and adults.
+            All present-day salamander families are grouped together under the order Urodela.
+            Salamander diversity is highest in the Northern Hemisphere and most species are found in the Holarctic
+            realm,
             with some species present in the Neotropical realm.
-            Salamanders rarely have more than four toes on their front legs 
-            and five on their rear legs, but some species have fewer digits 
-            and others lack hind limbs. Their permeable skin usually makes 
-            them reliant on habitats in or near water or other cool, damp places. 
-            Some salamander species are fully aquatic throughout their lives, 
+            Salamanders rarely have more than four toes on their front legs
+            and five on their rear legs, but some species have fewer digits
+            and others lack hind limbs. Their permeable skin usually makes
+            them reliant on habitats in or near water or other cool, damp places.
+            Some salamander species are fully aquatic throughout their lives,
             some take to the water intermittently, and others are entirely terrestrial as adults.</div>
 
 
+    </div>
+
+
+    <hr>
+
+
+    <br />
+    <br />
+    <h1 class="center">Çünkü hem karada gidebiliyorlar hem de suda</h1>
+
+
+
+    <script>
+        function showVideo2() {
+            var x = document.getElementById("video-id2")
+            x.style.visibility = "visible";
+
+            var y = document.getElementById("video-button-id2")
+            y.style.visibility = "hidden";
+        }
+    </script>
+
+
+    <div class="flexbox-container">
+        <div class="flexbox-item flexbox-item-1 ">
+            <img src="Semender2.jpg" />
+        </div>
+        <div class="flexbox-item flexbox-item-2">
+
+            <iframe id="video-id2" width="560" height="315" src="https://www.youtube.com/embed/byLDgtSMI0w"
+                frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+
+            <button id="video-button-id2" class="video-button" type="button" onclick=showVideo2()>Semender izle</button>
+
+
+
+
+
+        </div>
+        <div class="flexbox-item
+            flexbox-item-3">Salamanders rarely have more than four toes on their front legs and five on their rear
+            legs,
+            but some species have fewer digits and others lack hind limbs. Their permeable skin usually makes them
+            reliant on
+            habitats in or near water or other cool, damp places. Some salamander species are fully aquatic throughout
+            their
+            lives, some take to the water intermittently, and others are entirely terrestrial as adults.
+            They are capable of regenerating lost limbs, as well as other damaged parts of their bodies.
+            Researchers hope to reverse engineer the remarkable regenerative processes for potential
+            human medical applications, such as brain and spinal cord injury treatment or preventing harmful scarring
+            during heart surgery recovery..</div>
+
+
+    </div>
+
+    <hr>
+
+    <br />
+    <br />
+
+    <h1 class="center">Erkek yurduna'nun amblemi haline gelmiştir.</h1>
+
+
+    <script>
+        function showVideo3() {
+            var x = document.getElementById("video-id3")
+            x.style.visibility = "visible";
+
+            var y = document.getElementById("video-button-id3")
+            y.style.visibility = "hidden";
+        }
+    </script>
+
+
+    <div class="flexbox-container">
+        <div class="flexbox-item flexbox-item-1 ">
+            <img src="Semender3.jpg" />
+        </div>
+        <div class="flexbox-item flexbox-item-2">
+
+            <iframe id="video-id3" width="560" height="315" src="https://www.youtube.com/embed/Pl_x_B113yQ"
+                frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+
+            <button id="video-button-id3" class="video-button" type="button" onclick=showVideo3()>Semender izle</button>
+
+
+
+
+
+        </div>
+        <div class="flexbox-item
+            flexbox-item-3">Members of the family Salamandridae are mostly known as newts and lack the costal
+            grooves along the sides of their bodies typical of other groups. The skin of some species contains
+            the powerful poison tetrodotoxin; these salamanders tend to be slow-moving and have bright warning
+            coloration to advertise their toxicity. Salamanders typically lay eggs in water and have aquatic larvae,
+            but great variation occurs in their lifecycles. Some species in harsh environments reproduce while still
+            in the larval state.</div>
+
+
+    </div>
+
+
+    <hr>
+    <br />
+    <br />
+
+
+    <footer class="footer-distributed">
+
+        <div class="footer-left">
+
+            <h3>NTV<span>Semender</span></h3>
+
+            <p class="footer-links">
+                <a href="#" class="link-1">Home</a>
+
+                <a href="#">Blog</a>
+
+                <a href="#">Pricing</a>
+
+                <a href="#">About</a>
+
+                <a href="#">Faq</a>
+
+                <a href="#">Contact</a>
+            </p>
+
+            <p class="footer-company-name">NTV Semender © 2020</p>
         </div>
 
-   
-        <br/>
-        <br/>
+        <div class="footer-center">
 
-        <footer class="footer-distributed">
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>59800, Hürriyet Mahallesi</span> Çorlu, Tekirdag</p>
+            </div>
 
-			<div class="footer-left">
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>+90 554 498 2797</p>
+            </div>
 
-				<h3>NTV<span>Semender</span></h3>
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:efecanbahcivanoglu@gmail.com">efecanbahcivanoglu@gmail.com</a></p>
+            </div>
 
-				<p class="footer-links">
-					<a href="#" class="link-1">Home</a>
-					
-					<a href="#">Blog</a>
-				
-					<a href="#">Pricing</a>
-				
-					<a href="#">About</a>
-					
-					<a href="#">Faq</a>
-					
-					<a href="#">Contact</a>
-				</p>
+        </div>
 
-				<p class="footer-company-name">NTV Semender © 2020</p>
-			</div>
+        <div class="footer-right">
 
-			<div class="footer-center">
+            <p class="footer-company-about">
+                <span>Change the background-color</span>
 
-				<div>
-					<i class="fa fa-map-marker"></i>
-					<p><span>59800, Hürriyet Mahallesi</span> Çorlu, Tekirdag</p>
-				</div>
+            </p>
 
-				<div>
-					<i class="fa fa-phone"></i>
-					<p>+90 554 498 2797</p>
-				</div>
+            <div class="footer-icons">
 
-				<div>
-					<i class="fa fa-envelope"></i>
-					<p><a href="mailto:support@company.com">efecanbahcivanoglu@gmail.com</a></p>
-				</div>
+                <a class="icon-back-color1"><i>
+                        <button style="background-color: red" onclick="gfg_Run1()">
 
-			</div>
+                        </button>
+                    </i></a>
+                <a class="icon-back-color2"><i>
+                        <button style="background-color: blue" onclick="gfg_Run2()">
 
-			<div class="footer-right">
+                        </button>
+                    </i></a>
+                <a class="icon-back-color3"><i>
+                        <button style="background-color: yellow" onclick="gfg_Run3()">
 
-				<p class="footer-company-about">
-					<span>About the company</span>
-					
-				</p>
+                        </button> </i></a>
+                <a class="icon-back-color4"><i>
+                        <button style="background-color: white" onclick="gfg_Run4()">
 
-				<div class="footer-icons">
+                        </button> </i></a>
 
-					<a href="#"><i class="facebook"></i></a>
-					<a href="#"><i class="twitter"></i></a>
-					<a href="#"><i class="flinkedin"></i></a>
-					<a href="#"><i class="github"></i></a>
+            </div>
 
-				</div>
+            <script>
+                function changeColor(color) {
+                    document.body.style.background = color;
+                }
+                function gfg_Run1() {
+                    changeColor("red");
+                }
+                function gfg_Run2() {
+                    changeColor("blue");
 
-			</div>
+                } function gfg_Run3() {
+                    changeColor("yellow");
 
-		</footer>
+                } function gfg_Run4() {
+                    changeColor("white");
+                }            
+            </script>
+
+        </div>
+
+    </footer>
 
 
 
 
-	</body>
+</body>
 
 
 
